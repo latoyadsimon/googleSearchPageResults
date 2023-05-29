@@ -1,0 +1,118 @@
+/* using the color theme text document we made  */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aebe;
+  --font-color-link: #57a6ff;
+  --footer: #34314b;
+  --footer-base: #2e2b45;
+  /* contrast will be the same as font color light */
+  --contrast: rgba(246, 248, 249, 0.8);
+  --success: #64ecf5;
+  --danger: #ff8b8d;
+  --grad-1: #a1ecff;
+  --grad-2: #7dbcff;
+  /* common font sizes in px converted to rem */
+  --size-10: 0.625rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+/* applying rules to the base of our project */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #ff8b8d; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  /* this translates to 14px */
+  font-size: var(--size-14);
+  /* line-height determines the space between each line */
+  line-height: 1.6;
+  /* setting it to 0 so it catches if the browser has defaults */
+  letter-spacing: 0;
+  /* usually the default of the browser is black */
+  color: var(--font-color-base);
+  margin: 0;
+  padding: 0;
+}
+
+/* box sizing, sets how the total width and height of an element is calculated,
+     */
+/* grabbing everything, and its before and after  */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  /* helps fit images in their container and scale in responsive sites*/
+  width: 100%;
+  /* this will handle edge case scenarios if the width is trying to exceed 100% */
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.search-bar {
+  display: flex;
+  margin-top: var(--size-50);
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo,
+.menu {
+  display: flex;
+}
+
+/* making a default class, default container used to center content and make sure it has padding on right and left sides */
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google-font {
+  font-family: "Outfit", sans-serif;
+}

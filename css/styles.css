@@ -1,0 +1,202 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: var(--font-color-link);
+}
+
+.img-wrapper {
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.profile-wrapper {
+  width: 30px;
+  border: 3px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  align-items: stretch;
+}
+
+#search {
+  border-radius: 15px;
+  text-align: left;
+}
+
+/* .input-icons i {
+  position: absolute;
+} */
+
+.input-icons span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.input-icons {
+  width: 78%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+/* .ACRAdd {
+  border-left: 1px solid #dadce0;
+  height: 65%;
+} */
+
+.options,
+.search-options,
+.tools,
+.search-options div {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.options {
+  width: 40%;
+  margin: 0px 260px;
+}
+
+.search-options div,
+.tools p {
+  margin-right: 1rem;
+}
+
+.search-options div i {
+  margin-right: 5px;
+}
+
+.tools {
+  margin-left: 50px;
+}
+
+main {
+  /* border: 2px solid blue; */
+  width: 597px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  left: -100px;
+  top: 10px;
+}
+
+hr {
+  margin-top: 10px;
+  width: 100vw;
+}
+header {
+  width: 80%;
+}
+
+.results section {
+  margin-top: 20px;
+}
+
+.support a h2,
+.oberlo a h2,
+.wikipedia a h2 {
+  font-size: 20px;
+}
+
+.support select,
+.oberlo select,
+.wikipedia select {
+  border: none;
+  background-color: transparent;
+}
+
+.peopleAlsoAsk {
+  display: flex;
+  flex-direction: column;
+}
+
+.peopleAlsoAsk input,
+.peopleAlsoAsk select {
+  padding: 12px 20px;
+  margin: 0px 10px 0px 0px;
+}
+
+.peopleAlsoAsk p {
+  justify-content: flex-end;
+  display: flex;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-right: 0.3rem;
+}
+
+.footer,
+.footer-left,
+.numbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer div,
+.numbers a {
+  margin-right: 10px;
+}
+
+.footer-wrapper {
+  width: 200px;
+}
+
+.footer-left .numbers {
+  position: relative;
+  bottom: 65px;
+}
+
+.footer-right,
+.footer-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selected-one {
+  color: var(--black);
+}
+
+.option-selected * {
+  color: var(--font-color-link);
+  text-decoration: underline;
+  line-height: 1.6;
+}
